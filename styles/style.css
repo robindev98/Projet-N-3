@@ -1,21 +1,9 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'SourceSansPro';
-  src: url("font/SourceSansPro-Regular.eot");
-  src: url("font/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("font/SourceSansPro-Regular.woff2") format("woff2"), url("font/SourceSansPro-Regular.woff") format("woff"), url("font/SourceSansPro-Regular.ttf") format("truetype"), url("font/SourceSansPro-Regular.svg#SourceSansPro-Regular") format("svg"); }
-@font-face {
-  font-family: 'KaushanScript-Regular';
-  src: url("font/KaushanScript-Regular.eot");
-  src: url("font/KaushanScript-Regular.eot?#iefix") format("embedded-opentype"), url("font/KaushanScript-Regular.woff2") format("woff2"), url("font/KaushanScript-Regular.woff") format("woff"), url("font/KaushanScript-Regular.ttf") format("truetype"), url("font/KaushanScript-Regular.svg#SourceSansPro-Regular") format("svg"); }
-@font-face {
-  font-family: 'Apple ';
-  src: url("font/KaushanScript-Regular.eot");
-  src: url("font/KaushanScript-Regular.eot?#iefix") format("embedded-opentype"), url("font/KaushanScript-Regular.woff2") format("woff2"), url("font/KaushanScript-Regular.woff") format("woff"), url("font/KaushanScript-Regular.ttf") format("truetype"), url("font/KaushanScript-Regular.svg#SourceSansPro-Regular") format("svg"); }
 body {
   border: 1px solid #EEEEEE; }
 
 h1 {
-  font-family: 'SourceSansPro', sans-serif;
+  font-family: 'Arial', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,47 +13,81 @@ h1 {
   margin-top: 0px;
   font-size: 3em; }
 
-nav {
+.menu {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-  nav .menuenchante {
-    background-color: #F8BBD0;
-    max-width: 1000px;
-    width: 600px;
-    height: 200px;
-    box-shadow: 1px 1px 5px 1px #E0E0E0;
-    background-color: #F8BBD0 #ea3070; }
-  nav .menufrançais {
-    /* mettre le fond avec une opacité rose plus claire */
-    width: 600px;
-    box-shadow: 1px 1px 5px 1px #E0E0E0;
-    background-color: #F8BBD0 #ea3070;
-    font-family: 'KaushanScript', sans-serif; }
-  nav .menupapille {
-    width: 600px; }
-
-.foot {
-  font-family: 'SourceSansPro', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #FBC02D;
-  background-color: #009688;
+  justify-content: space-around;
   text-align: center;
-  max-width: 250px;
-  max-height: 40px;
-  margin: auto;
-  font-size: 1.5em;
-  border-radius: 10px; }
-  .foot__mention {
-    max-height: 50px;
-    font-size: 1.3em;
-    margin-top: 30px;
-    font-family: 'SourceSansPro', sans-serif;
+  margin-bottom: 20px; }
+  .menu--enchante {
+    background-color: #F8BBD0;
+    box-shadow: 1px 1px 5px 1px #E0E0E0;
+    width: 280px;
+    height: 350px;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    /* a revoir si changemtn de taille pour le mot menu */ }
+    .menu--enchante i {
+      display: flex;
+      justify-content: center; }
+  .menu--français {
+    /* mettre le fond avec une opacité rose plus claire */
+    margin-left: 20px;
+    box-shadow: 1px 1px 5px 1px #E0E0E0;
+    width: 280px;
+    height: 350px;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    /* a revoir si changemtn de taille pour le mot menu */ }
+  .menu--papille {
+    box-shadow: 1px 1px 5px 1px #E0E0E0;
+    width: 280px;
+    height: 350px;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    /* a revoir si changemtn de taille pour le mot menu */
+    color: #1976D2; }
+  .menu--gout {
+    margin-left: 20px;
+    box-shadow: 1px 1px 5px 1px #E0E0E0;
+    width: 280px;
+    height: 350px;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    /* a revoir si changemtn de taille pour le mot menu */ }
+
+footer {
+  text-align: center; }
+  footer .foot {
+    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #FBC02D;
     background-color: #009688;
-    text-align: center; }
+    max-width: 250px;
+    max-height: 40px;
+    margin: auto;
+    font-size: 1.5em;
+    border-radius: 10px; }
+    footer .foot__mention {
+      max-height: 50px;
+      font-size: 1.3em;
+      margin-top: 30px;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FBC02D;
+      background-color: #009688; }

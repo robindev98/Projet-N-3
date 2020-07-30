@@ -1,0 +1,8 @@
+@mixin tag {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $second-color;
+    background-color: $color-primary
+} 

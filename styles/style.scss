@@ -1,51 +1,16 @@
-@font-face {
-    font-family: 'SourceSansPro';
-    src: url('font/SourceSansPro-Regular.eot');
-    src: url('font/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('font/SourceSansPro-Regular.woff2') format('woff2'),
-        url('font/SourceSansPro-Regular.woff') format('woff'),
-        url('font/SourceSansPro-Regular.ttf') format('truetype'),
-        url('font/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg');
-}
-@font-face {
-    font-family: 'KaushanScript-Regular';
-    src: url('font/KaushanScript-Regular.eot');
-    src: url('font/KaushanScript-Regular.eot?#iefix') format('embedded-opentype'),
-        url('font/KaushanScript-Regular.woff2') format('woff2'),
-        url('font/KaushanScript-Regular.woff') format('woff'),
-        url('font/KaushanScript-Regular.ttf') format('truetype'),
-        url('font/KaushanScript-Regular.svg#SourceSansPro-Regular') format('svg');
-}
-@font-face {
-    font-family: 'Apple ';
-    src: url('font/KaushanScript-Regular.eot');
-    src: url('font/KaushanScript-Regular.eot?#iefix') format('embedded-opentype'),
-        url('font/KaushanScript-Regular.woff2') format('woff2'),
-        url('font/KaushanScript-Regular.woff') format('woff'),
-        url('font/KaushanScript-Regular.ttf') format('truetype'),
-        url('font/KaushanScript-Regular.svg#SourceSansPro-Regular') format('svg');
-}
+@import"directorie/variable";
+@import"directorie/mixin"; 
 
-
-$color-primary: #009688;
-$second-color: #FBC02D;
-$pink: #F8BBD0;
-
-@mixin taille {
-    text-align: center;
-}
-@mixin box($color:$pink, $size:$pink) {
+@mixin box {
     box-shadow: 1px 1px 5px 1px #E0E0E0;
-    background-color: $size darken($color, 30%);
-}
-@mixin tag {
-    font-family: 'SourceSansPro', sans-serif;
+    width: 280px; 
+    height: 350px;
+    font-size: 1.5em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    color: $second-color;
-    background-color: $color-primary
-}
+    align-content: flex-end; /* a revoir si changemtn de taille pour le mot menu */
+} 
 
 body {
     border: 1px solid #EEEEEE;
@@ -58,41 +23,47 @@ h1 {
     font-size: 3em;
 }
 
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    .menuenchante {
-        background-color: $pink;
-        max-width: 1000px;
-        width: 600px;
-        height: 200px;
-        @include box;
-    }
-    .menufrançais {
-        /* mettre le fond avec une opacité rose plus claire */;
-        width: 600px;
-        @include box;
-        font-family: 'KaushanScript', sans-serif;
-    }
-    .menupapille {
-        width: 600px;
-    }
+.menu {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin-bottom: 20px;
+            &--enchante{
+                background-color: $pink;
+                @include box;
+                    & i {
+                        display: flex;
+                        justify-content: center;
+                    }
+            }
+            &--français {
+                /* mettre le fond avec une opacité rose plus claire */;
+                margin-left: 20px;
+                @include box;
+            }
+            &--papille {
+                @include box;
+                color: #1976D2;
+            }
+            &--gout {
+                margin-left: 20px;
+                @include box;
+            }
 }
-
-.foot {
-    @include tag;
-    @include taille;
-    max-width: 250px;
-    max-height: 40px;
-    margin: auto;
-    font-size: 1.5em;
-    border-radius: 10px;
-    &__mention {
-        max-height: 50px;
-        font-size: 1.3em;
-        margin-top: 30px;
+footer {  
+    text-align: center;
+    .foot {
         @include tag;
-        @include taille;
+        max-width: 250px;
+        max-height: 40px;
+        margin: auto;
+        font-size: 1.5em;
+        border-radius: 10px;
+        &__mention {
+            max-height: 50px;
+            font-size: 1.3em;
+            margin-top: 30px;
+            @include tag;
+        }
     }
 }
