@@ -1,5 +1,6 @@
 @import"directorie/variable";
 @import"directorie/mixin"; 
+@import"directorie/police";
 
 @mixin box {
     box-shadow: 1px 1px 5px 1px #E0E0E0;
@@ -47,11 +48,12 @@ h1 {
             }
             &--gout {
                 margin-left: 20px;
+                font-family: 'VTClettererpro-webfont', sans-serif; 
                 @include box;
             }
 }
 footer {  
-    text-align: center;
+    text-align: center; 
     .foot {
         @include tag;
         max-width: 250px;

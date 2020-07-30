@@ -1,4 +1,4 @@
-@font-face {
+@font-face { 
     font-family: 'KaushanScript-Regular';
     src: url('../../font/KaushanScript-Regular.eot');
     src: url('../../font/KaushanScript-Regular.eot?#iefix') format('embedded-opentype'),
@@ -15,4 +15,22 @@
         url('../../font/VTClettererpro-webfont.woff') format('woff'),
         url('../../font/VTClettererpro-webfont.ttf') format('truetype'),
         url('../../font/VTClettererpro-webfont.svg#VTClettererpro-webfont') format('svg');
+} 
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../../font/Montserrat-Regular.eot');
+    src: url('../../font/Montserrat-Regular?#iefix') format('embedded-opentype'),
+        url('../../font/Montserrat-Regular.woff2') format('woff2'),
+        url('../../font/Montserrat-Regular.woff') format('woff'),
+        url('../../font/Montserrat-Regular.ttf') format('truetype'),
+        url('../../font/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+} 
+@font-face {
+    font-family: 'GoudyStM';
+    src: url('../../font/GoudyStM.eot');
+    src: url('../../font/GoudyStM?#iefix') format('embedded-opentype'),
+        url('../../font/GoudyStM.woff2') format('woff2'),
+        url('../../font/GoudyStM.woff') format('woff'),
+        url('../../font/GoudyStM.ttf') format('truetype'),
+        url('../../font/GoudyStM.svg#GoudyStM') format('svg');
 } 

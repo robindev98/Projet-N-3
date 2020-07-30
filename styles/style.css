@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'KaushanScript-Regular';
+  src: url("../../font/KaushanScript-Regular.eot");
+  src: url("../../font/KaushanScript-Regular.eot?#iefix") format("embedded-opentype"), url("../../font/KaushanScript-Regular.woff2") format("woff2"), url("../../font/KaushanScript-Regular.woff") format("woff"), url("../../font/KaushanScript-Regular.ttf") format("truetype"), url("../../font/KaushanScript-Regular.svg#KaushanScript-Regular") format("svg"); }
+@font-face {
+  font-family: 'VTClettererpro-webfont';
+  src: url("../../font/VTClettererpro-webfont.eot");
+  src: url("../../font/VTClettererpro-webfont.eot?#iefix") format("embedded-opentype"), url("../../font/VTClettererpro-webfont.woff2") format("woff2"), url("../../font/VTClettererpro-webfont.woff") format("woff"), url("../../font/VTClettererpro-webfont.ttf") format("truetype"), url("../../font/VTClettererpro-webfont.svg#VTClettererpro-webfont") format("svg"); }
 body {
   border: 1px solid #EEEEEE; }
 
@@ -57,6 +65,7 @@ h1 {
     color: #1976D2; }
   .menu--gout {
     margin-left: 20px;
+    font-family: 'VTClettererpro-webfont', sans-serif;
     box-shadow: 1px 1px 5px 1px #E0E0E0;
     width: 280px;
     height: 350px;
