@@ -1,12 +1,20 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'KaushanScript-Regular';
-  src: url("../../font/KaushanScript-Regular.eot");
-  src: url("../../font/KaushanScript-Regular.eot?#iefix") format("embedded-opentype"), url("../../font/KaushanScript-Regular.woff2") format("woff2"), url("../../font/KaushanScript-Regular.woff") format("woff"), url("../../font/KaushanScript-Regular.ttf") format("truetype"), url("../../font/KaushanScript-Regular.svg#KaushanScript-Regular") format("svg"); }
+  src: url("../font/KaushanScript-Regular.eot");
+  src: url("../font/KaushanScript-Regular.eot?#iefix") format("embedded-opentype"), url("../font/KaushanScript-Regular.woff2") format("woff2"), url("../font/KaushanScript-Regular.woff") format("woff"), url("../font/KaushanScript-Regular.ttf") format("truetype"), url("../font/KaushanScript-Regular.svg#KaushanScript-Regular") format("svg"); }
 @font-face {
   font-family: 'VTClettererpro-webfont';
-  src: url("../../font/VTClettererpro-webfont.eot");
-  src: url("../../font/VTClettererpro-webfont.eot?#iefix") format("embedded-opentype"), url("../../font/VTClettererpro-webfont.woff2") format("woff2"), url("../../font/VTClettererpro-webfont.woff") format("woff"), url("../../font/VTClettererpro-webfont.ttf") format("truetype"), url("../../font/VTClettererpro-webfont.svg#VTClettererpro-webfont") format("svg"); }
+  src: url("../font/VTClettererpro-webfont.eot");
+  src: url("../font/VTClettererpro-webfont.eot?#iefix") format("embedded-opentype"), url("../font/VTClettererpro-webfont.woff2") format("woff2"), url("../font/VTClettererpro-webfont.woff") format("woff"), url("../font/VTClettererpro-webfont.ttf") format("truetype"), url("../font/VTClettererpro-webfont.svg#VTClettererpro-webfont") format("svg"); }
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url("../font/Montserrat-Regular.eot");
+  src: url("../font/Montserrat-Regular?#iefix") format("embedded-opentype"), url("../font/Montserrat-Regular.woff2") format("woff2"), url("../font/Montserrat-Regular.woff") format("woff"), url("../font/Montserrat-Regular.ttf") format("truetype"), url("../font/Montserrat-Regular.svg#Montserrat-Regular") format("svg"); }
+@font-face {
+  font-family: 'GoudyStM';
+  src: url("../font/GoudyStM.eot");
+  src: url("../font/GoudyStM?#iefix") format("embedded-opentype"), url("../font/GoudyStM.woff2") format("woff2"), url("../font/GoudyStM.woff") format("woff"), url("../font/GoudyStM.ttf") format("truetype"), url("../font/GoudyStM.svg#GoudyStM") format("svg"); }
 body {
   border: 1px solid #EEEEEE; }
 
@@ -100,3 +108,113 @@ footer {
       align-items: center;
       color: #FBC02D;
       background-color: #009688; }
+
+/*   A REMETTRE POUR LE MENU1 ?
+#logo {
+    @include tag;
+    height: 110px;
+    margin-top: 0px;
+    font-size: 3em; 
+}
+
+section {
+    box-shadow: 1px 1px 5px 1px #E0E0E0;
+    max-width: 550px;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    background-color: $pink;
+    font-family: 'KaushanScript-Regular', sans-serif;
+    h1 {
+        font-size: 2.5em;
+    }
+    p {
+    }
+}
+
+footer {  
+    text-align: center;
+        #foot {
+            max-height: 50px;
+            font-size: 1.3em;
+            margin-top: 30px;
+            @include tag;
+        }
+}*/
+/* A REMETRE POUR LE MENU 2 FRANCAIS
+#logo {
+    @include tag;
+    height: 110px;
+    margin-top: 0px;
+    font-size: 3em;
+}
+
+section {
+    box-shadow: 1px 1px 5px 1px #E0E0E0;
+    max-width: 550px;
+    margin: auto;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+footer {  
+    text-align: center;
+        #foot {
+            max-height: 50px;
+            font-size: 1.3em;
+            margin-top: 30px;
+            @include tag;
+        }
+} */
+/* A REMETRE POUR LE MENU 3 PAPILLE
+
+#logo {
+    @include tag;
+    height: 110px;
+    margin-top: 0px;
+    font-size: 3em;
+}
+
+section {
+    box-shadow: 1px 1px 5px 1px #E0E0E0;
+    max-width: 550px;
+    margin: auto;
+    font-family: 'GoudyStM', sans-serif;
+}
+
+footer {  
+    text-align: center;
+        #foot {
+            max-height: 50px;
+            font-size: 1.3em;
+            margin-top: 30px;
+            @include tag;
+        }
+} */
+/* A REMETRE POUR LE MENU 4 PALETTE DU GOUT 
+
+#logo {
+    @include tag;
+    height: 110px;
+    margin-top: 0px;
+    font-size: 3em;
+}
+
+section {
+    box-shadow: 1px 1px 5px 1px #E0E0E0;
+    max-width: 550px;
+    margin: auto;
+    font-family:VTClettererpro-webfont, sans-serif;
+}
+
+footer {  
+    text-align: center;
+        #foot {
+            max-height: 50px;
+            font-size: 1.3em;
+            margin-top: 30px;
+            @include tag;
+        }
+} */
