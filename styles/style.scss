@@ -2,58 +2,60 @@
 @import"directorie/mixin"; 
 @import"directorie/police";
 
-@mixin box {
-    box-shadow: 1px 1px 5px 1px #E0E0E0;
-    width: 280px; 
-    height: 350px;
-    font-size: 1.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: flex-end; /* a revoir si changemtn de taille pour le mot menu */
-} 
-
+ 
 body {
     border: 1px solid #EEEEEE; 
+    height: 1000px;  
+    width: 99%; 
 }
-
-h1 {
+ 
+.logo {
     @include tag;
     height: 110px;
     margin-top: 0px;
-    font-size: 3em;
+    font-size: 3em;  
+} 
+
+a {
+    text-decoration: none;
 }
- 
+  
 .menu {
         display: flex;
         justify-content: space-around;
         text-align: center;
         margin-bottom: 20px;
             &--enchante{
-                background-color: $pink;
+                background-color: $darkpink;
                 @include box;
-                    & i {
+                    & i { 
                         display: flex;
                         justify-content: center;
                     }
             }
             &--français {
+                background-color: $pink;
                 /* mettre le fond avec une opacité rose plus claire */;
                 margin-left: 20px;
                 @include box;
             }
             &--papille {
+                background-color: $blue; 
                 @include box;
                 color: #1976D2;
             }
             &--gout {
+                background-color: $white;
                 margin-left: 20px;
                 font-family: 'VTClettererpro-webfont', sans-serif; 
                 @include box;
             }
 } 
 footer {  
-    text-align: center; 
+    text-align: center;
+    position: fixed; 
+    bottom: 0px;
+    width: 99%;
     .foot {
         @include tag;
         max-width: 250px;
@@ -70,24 +72,14 @@ footer {
     }
 }
 
-/*   A REMETTRE POUR LE MENU1 ?
-#logo {
-    @include tag;
-    height: 110px;
-    margin-top: 0px;
-    font-size: 3em; 
-}
-
-section {
-    box-shadow: 1px 1px 5px 1px #E0E0E0;
-    max-width: 550px;
-    margin: auto;
+#planche1 {
+    @include boxmenus;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
-    background-color: $pink;
+    /* background color en couleur à opacité réduite donc rose*/
     font-family: 'KaushanScript-Regular', sans-serif;
     h1 {
         font-size: 2.5em;
@@ -96,89 +88,17 @@ section {
     }
 }
 
-footer {  
-    text-align: center;
-        #foot {
-            max-height: 50px;
-            font-size: 1.3em;
-            margin-top: 30px;
-            @include tag;
-        }
-}*/
-
-/* A REMETRE POUR LE MENU 2 FRANCAIS
-#logo {
-    @include tag;
-    height: 110px;
-    margin-top: 0px;
-    font-size: 3em;
-}
-
-section {
-    box-shadow: 1px 1px 5px 1px #E0E0E0;
-    max-width: 550px;
-    margin: auto;
+#planche2 {
+    @include boxmenus;
     font-family: 'Montserrat-Regular', sans-serif;
 }
 
-footer {  
-    text-align: center;
-        #foot {
-            max-height: 50px;
-            font-size: 1.3em;
-            margin-top: 30px;
-            @include tag;
-        }
-} */
-
-/* A REMETRE POUR LE MENU 3 PAPILLE
-
-#logo {
-    @include tag;
-    height: 110px;
-    margin-top: 0px;
-    font-size: 3em;
-}
-
-section {
-    box-shadow: 1px 1px 5px 1px #E0E0E0;
-    max-width: 550px;
-    margin: auto;
+#planche3 {
+    @include boxmenus;
     font-family: 'GoudyStM', sans-serif;
 }
 
-footer {  
-    text-align: center;
-        #foot {
-            max-height: 50px;
-            font-size: 1.3em;
-            margin-top: 30px;
-            @include tag;
-        }
-} */ 
-
-/* A REMETRE POUR LE MENU 4 PALETTE DU GOUT 
-
-#logo {
-    @include tag;
-    height: 110px;
-    margin-top: 0px;
-    font-size: 3em;
-}
-
-section {
-    box-shadow: 1px 1px 5px 1px #E0E0E0;
-    max-width: 550px;
-    margin: auto;
+#planche4 {
+    @include boxmenus;
     font-family:VTClettererpro-webfont, sans-serif;
 }
-
-footer {  
-    text-align: center;
-        #foot {
-            max-height: 50px;
-            font-size: 1.3em;
-            margin-top: 30px;
-            @include tag;
-        }
-} */  

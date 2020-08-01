@@ -16,9 +16,11 @@
   src: url("../font/GoudyStM.eot");
   src: url("../font/GoudyStM?#iefix") format("embedded-opentype"), url("../font/GoudyStM.woff2") format("woff2"), url("../font/GoudyStM.woff") format("woff"), url("../font/GoudyStM.ttf") format("truetype"), url("../font/GoudyStM.svg#GoudyStM") format("svg"); }
 body {
-  border: 1px solid #EEEEEE; }
+  border: 1px solid #EEEEEE;
+  height: 1000px;
+  width: 99%; }
 
-h1 {
+.logo {
   font-family: 'Arial', sans-serif;
   display: flex;
   justify-content: center;
@@ -29,13 +31,16 @@ h1 {
   margin-top: 0px;
   font-size: 3em; }
 
+a {
+  text-decoration: none; }
+
 .menu {
   display: flex;
   justify-content: space-around;
   text-align: center;
   margin-bottom: 20px; }
   .menu--enchante {
-    background-color: #F8BBD0;
+    background-color: #F48FB1;
     box-shadow: 1px 1px 5px 1px #E0E0E0;
     width: 280px;
     height: 350px;
@@ -49,6 +54,7 @@ h1 {
       display: flex;
       justify-content: center; }
   .menu--français {
+    background-color: #E1BEE7;
     /* mettre le fond avec une opacité rose plus claire */
     margin-left: 20px;
     box-shadow: 1px 1px 5px 1px #E0E0E0;
@@ -61,6 +67,7 @@ h1 {
     align-content: flex-end;
     /* a revoir si changemtn de taille pour le mot menu */ }
   .menu--papille {
+    background-color: #80DEEA;
     box-shadow: 1px 1px 5px 1px #E0E0E0;
     width: 280px;
     height: 350px;
@@ -72,6 +79,7 @@ h1 {
     /* a revoir si changemtn de taille pour le mot menu */
     color: #1976D2; }
   .menu--gout {
+    background-color: #EEEEEE;
     margin-left: 20px;
     font-family: 'VTClettererpro-webfont', sans-serif;
     box-shadow: 1px 1px 5px 1px #E0E0E0;
@@ -85,7 +93,10 @@ h1 {
     /* a revoir si changemtn de taille pour le mot menu */ }
 
 footer {
-  text-align: center; }
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  width: 99%; }
   footer .foot {
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -109,112 +120,34 @@ footer {
       color: #FBC02D;
       background-color: #009688; }
 
-/*   A REMETTRE POUR LE MENU1 ?
-#logo {
-    @include tag;
-    height: 110px;
-    margin-top: 0px;
-    font-size: 3em; 
-}
+#planche1 {
+  box-shadow: 1px 1px 5px 1px #E0E0E0;
+  max-width: 550px;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  /* background color en couleur à opacité réduite donc rose*/
+  font-family: 'KaushanScript-Regular', sans-serif; }
+  #planche1 h1 {
+    font-size: 2.5em; }
 
-section {
-    box-shadow: 1px 1px 5px 1px #E0E0E0;
-    max-width: 550px;
-    margin: auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-    background-color: $pink;
-    font-family: 'KaushanScript-Regular', sans-serif;
-    h1 {
-        font-size: 2.5em;
-    }
-    p {
-    }
-}
+#planche2 {
+  box-shadow: 1px 1px 5px 1px #E0E0E0;
+  max-width: 550px;
+  margin: auto;
+  font-family: 'Montserrat-Regular', sans-serif; }
 
-footer {  
-    text-align: center;
-        #foot {
-            max-height: 50px;
-            font-size: 1.3em;
-            margin-top: 30px;
-            @include tag;
-        }
-}*/
-/* A REMETRE POUR LE MENU 2 FRANCAIS
-#logo {
-    @include tag;
-    height: 110px;
-    margin-top: 0px;
-    font-size: 3em;
-}
+#planche3 {
+  box-shadow: 1px 1px 5px 1px #E0E0E0;
+  max-width: 550px;
+  margin: auto;
+  font-family: 'GoudyStM', sans-serif; }
 
-section {
-    box-shadow: 1px 1px 5px 1px #E0E0E0;
-    max-width: 550px;
-    margin: auto;
-    font-family: 'Montserrat-Regular', sans-serif;
-}
-
-footer {  
-    text-align: center;
-        #foot {
-            max-height: 50px;
-            font-size: 1.3em;
-            margin-top: 30px;
-            @include tag;
-        }
-} */
-/* A REMETRE POUR LE MENU 3 PAPILLE
-
-#logo {
-    @include tag;
-    height: 110px;
-    margin-top: 0px;
-    font-size: 3em;
-}
-
-section {
-    box-shadow: 1px 1px 5px 1px #E0E0E0;
-    max-width: 550px;
-    margin: auto;
-    font-family: 'GoudyStM', sans-serif;
-}
-
-footer {  
-    text-align: center;
-        #foot {
-            max-height: 50px;
-            font-size: 1.3em;
-            margin-top: 30px;
-            @include tag;
-        }
-} */
-/* A REMETRE POUR LE MENU 4 PALETTE DU GOUT 
-
-#logo {
-    @include tag;
-    height: 110px;
-    margin-top: 0px;
-    font-size: 3em;
-}
-
-section {
-    box-shadow: 1px 1px 5px 1px #E0E0E0;
-    max-width: 550px;
-    margin: auto;
-    font-family:VTClettererpro-webfont, sans-serif;
-}
-
-footer {  
-    text-align: center;
-        #foot {
-            max-height: 50px;
-            font-size: 1.3em;
-            margin-top: 30px;
-            @include tag;
-        }
-} */
+#planche4 {
+  box-shadow: 1px 1px 5px 1px #E0E0E0;
+  max-width: 550px;
+  margin: auto;
+  font-family: VTClettererpro-webfont, sans-serif; }

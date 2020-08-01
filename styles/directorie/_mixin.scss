@@ -6,3 +6,18 @@
     color: $second-color;
     background-color: $color-primary
 } 
+@mixin box {
+    box-shadow: 1px 1px 5px 1px #E0E0E0;
+    width: 280px; 
+    height: 350px;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end; /* a revoir si changemtn de taille pour le mot menu */
+} 
+@mixin boxmenus {
+    box-shadow: 1px 1px 5px 1px #E0E0E0;
+    max-width: 550px;
+    margin: auto;
+}
