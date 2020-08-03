@@ -41,33 +41,8 @@ a {
   margin-bottom: 20px; }
   .menu--enchante {
     background-color: #F48FB1;
-    box-shadow: 1px 1px 5px 1px #E0E0E0;
-    width: 280px;
-    height: 350px;
-    font-size: 1.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: flex-end;
-    /* a revoir si changemtn de taille pour le mot menu */ }
-    .menu--enchante i {
-      display: flex;
-      justify-content: center; }
-  .menu--français {
-    background-color: #E1BEE7;
-    /* mettre le fond avec une opacité rose plus claire */
-    margin-left: 20px;
-    box-shadow: 1px 1px 5px 1px #E0E0E0;
-    width: 280px;
-    height: 350px;
-    font-size: 1.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: flex-end;
-    /* a revoir si changemtn de taille pour le mot menu */ }
-  .menu--papille {
-    background-color: #80DEEA;
+    color: black;
+    font-family: 'KaushanScript-Regular', sans-serif;
     box-shadow: 1px 1px 5px 1px #E0E0E0;
     width: 280px;
     height: 350px;
@@ -77,7 +52,44 @@ a {
     justify-content: center;
     align-content: flex-end;
     /* a revoir si changemtn de taille pour le mot menu */
-    color: #1976D2; }
+    transition: background-color 500ms; }
+    .menu--enchante:hover {
+      background-color: #f9bdd1; }
+    .menu--enchante i {
+      display: flex;
+      justify-content: center; }
+  .menu--français {
+    background-color: #E1BEE7;
+    font-family: 'Montserrat-Regular', sans-serif;
+    margin-left: 20px;
+    box-shadow: 1px 1px 5px 1px #E0E0E0;
+    width: 280px;
+    height: 350px;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    /* a revoir si changemtn de taille pour le mot menu */
+    transition: background-color 500ms; }
+    .menu--français:hover {
+      background-color: #f2e3f5; }
+  .menu--papille {
+    background-color: #80DEEA;
+    font-family: 'GoudyStM', sans-serif;
+    box-shadow: 1px 1px 5px 1px #E0E0E0;
+    width: 280px;
+    height: 350px;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    /* a revoir si changemtn de taille pour le mot menu */
+    color: #1976D2;
+    transition: background-color 500ms; }
+    .menu--papille:hover {
+      background-color: #ace9f1; }
   .menu--gout {
     background-color: #EEEEEE;
     margin-left: 20px;
@@ -90,7 +102,16 @@ a {
     flex-direction: column;
     justify-content: center;
     align-content: flex-end;
-    /* a revoir si changemtn de taille pour le mot menu */ }
+    /* a revoir si changemtn de taille pour le mot menu */
+    transition: background-color 500ms; }
+    .menu--gout:hover {
+      background-color: white; }
+
+.bigger {
+  transform: scale(1);
+  transition: transform 400ms; }
+  .bigger:hover {
+    transform: scale(1.15); }
 
 footer {
   text-align: center;

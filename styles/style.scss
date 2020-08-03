@@ -27,30 +27,54 @@ a {
         margin-bottom: 20px;
             &--enchante{
                 background-color: $darkpink;
+                color: black;
+                font-family: 'KaushanScript-Regular', sans-serif;
                 @include box;
+                transition:  background-color 500ms;
+                &:hover {
+                    background-color: lighten($darkpink, 10%);
+                }
                     & i { 
                         display: flex;
                         justify-content: center;
                     }
-            }
+            } 
             &--français {
                 background-color: $pink;
-                /* mettre le fond avec une opacité rose plus claire */;
+                font-family: 'Montserrat-Regular', sans-serif;
                 margin-left: 20px;
                 @include box;
+                transition: background-color 500ms;
+                &:hover {
+                    background-color: lighten($pink, 10%);
+                }
             }
             &--papille {
                 background-color: $blue; 
+                font-family: 'GoudyStM', sans-serif;
                 @include box;
                 color: #1976D2;
+                transition: background-color 500ms;
+                &:hover {
+                    background-color: lighten($blue, 10%);
+                }
             }
             &--gout {
                 background-color: $white;
                 margin-left: 20px;
                 font-family: 'VTClettererpro-webfont', sans-serif; 
                 @include box;
+                transition: background-color 500ms;
+                &:hover {
+                    background-color: lighten($white, 10%); 
+                }
             }
 } 
+
+.bigger {
+    @include formstyle; 
+}
+
 footer {  
     text-align: center;
     position: fixed; 
