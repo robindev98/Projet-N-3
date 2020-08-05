@@ -1,10 +1,9 @@
 @mixin tag {
     font-family: 'Arial', sans-serif;
     display: flex;
-    justify-content: center;
     align-items: center;
     color: $second-color;
-    background-color: $color-primary
+    background-color: $color-primary;
 } 
 @mixin box {
     box-shadow: 1px 1px 5px 1px #E0E0E0;
