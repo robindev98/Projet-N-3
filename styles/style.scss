@@ -1,12 +1,12 @@
 @import"directorie/variable";
 @import"directorie/mixin"; 
 @import"directorie/police";
-
  
-body {
+ 
+body { 
     border: 1px solid #EEEEEE; 
     height: 1000px;  
-    width: 99%; 
+    width: 99%;  
 }
  
 .logo {
@@ -33,7 +33,7 @@ a {
                 @include box;
                 transition:  background-color 500ms;
                 &:hover {
-                    background-color: lighten($pink, 5);
+                    background-color: lighten($darkpink, 10);
                 }
                     & i { 
                         display: flex;
@@ -47,17 +47,16 @@ a {
                 @include box;
                 transition: background-color 500ms;
                 &:hover {
-                    background-color: lighten($pink, 5);
+                    background-color: lighten($pink, 11);
                 }
             }
             &--papille {
                 background-color: $blue; 
                 font-family: 'GoudyStM', sans-serif;
                 @include box;
-                color: #1976D2;
                 transition: background-color 500ms;
                 &:hover {
-                    background-color: lighten($blue, 10);
+                    background-color: lighten($blue, 15);
                 }
             }
             &--gout {
@@ -83,7 +82,7 @@ footer {
     width: 99%;
 }
 
-.foot {
+.foot { /* onglet prochainement */
     @include tag;
     justify-content: center;
     max-width: 250px;
@@ -100,7 +99,7 @@ footer {
         content: "\2026";
         width: 0px; (code de rapprochement pour les points de suspension*/
     }
-        &__mention {
+        &__mention { /*onglet mentions légales + Contactez-nous*/
             max-height: 50px;
             font-size: 1.3em;
             margin-top: 30px; 
@@ -142,47 +141,124 @@ footer {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-#planche1 {
+.planche1 {  
     @include boxmenus;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
+    background-color: lighten($darkpink, 10);
     /* background color en couleur à opacité réduite donc rose*/
     font-family: 'KaushanScript-Regular', sans-serif;
-    h1 {
+    h2 {
         font-size: 2.5em;
-    }
-}
-
-.underline {
-    &:hover {
-        & + .line2 {
-            transform: scaleX(1);
-        }
-    }
-}    
-
-.line2 {
-    background-color: red;
-    height: 10px;
-    width: 300px;
-    transform: scaleX(0);
-    transition: transform 1000ms;
-}
-
-#planche2 {
+        margin-bottom: 0px;
+        & i {
+            display: flex;
+            justify-content: center;
+        }   
+    } 
+    h4 {
+        font-size: 1.5em;
+    } 
+} 
+ 
+.planche2 {
     @include boxmenus;
+    background-color: lighten($pink, 11);
     font-family: 'Montserrat-Regular', sans-serif;
+    h2 {
+        font-size: 2em;
+        margin-bottom: 60px;  
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+    &__color--orange {
+        color: $color-menu2-orange; 
+    }
+    &__color--violet {
+        color: $color-menu2-violet;
+    }
+    &__color--blue {
+        color: $color-menu2-blue;
+    }
 }
 
-#planche3 {
+.planche3 {
     @include boxmenus;
+    background-color: lighten($blue, 15);
     font-family: 'GoudyStM', sans-serif;
+    h2 {
+        font-size: 2.8em;
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
+    h3 {
+        font-size: 1.1em;
+        font-weight: normal;
+    }
 }
 
-#planche4 {
+.planche4 {
     @include boxmenus;
+    background-color: lighten($white, 10);
     font-family:VTClettererpro-webfont, sans-serif;
+    h2 {
+        font-size: 3em;
+    }
+    h3 { 
+        font-size: 1.1em;
+        font-weight: normal;
+    }
+}
+
+.planchemention {
+    @include boxmenus;
+    background-color: lighten($color-primary, 45);
+    font-family: Georgia, Verdana, Arial, sans-serif;
+    h2 {
+        font-size: 2.5rem;
+    }
+    p {
+        text-align: justify;
+    }
+}
+
+    
+.plat { /* animation bordure + disposition paragraphe menu*/
+    margin-right: 20px; 
+    margin-left: 20px;
+    .under {
+        display: flex;
+        justify-content: space-between;
+        &__center {
+        &:hover {
+            & > .line1 {
+                transform: scaleX(0);
+            }
+            & + .line2 {
+                transform: scaleX(1);
+                }
+            }
+        }    
+    }
+    .line1 {
+        @include formline; 
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 1000ms;
+    } 
+    .line2 { 
+        @include formline;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: transform 1000ms;
+    }
+    .main {
+        text-align: left;
+        &__euro {
+            float: right;
+            font-weight: bold;
+        } 
+    }
 }

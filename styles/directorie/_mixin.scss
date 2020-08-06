@@ -18,7 +18,10 @@
 @mixin boxmenus {
     box-shadow: 1px 1px 5px 1px #E0E0E0;
     max-width: 550px;
+    height: 760px;
+    padding: 15px 15px 15px 15px;
     margin: auto;
+    text-align: center;
 }
 @mixin formstyle {
     transform: scale(1);
@@ -26,4 +29,9 @@
     &:hover {
         transform: scale(1.15);
     }
+}
+@mixin formline {
+    background-color: red;
+    height: 20px;
+    width: 170px;
 }
