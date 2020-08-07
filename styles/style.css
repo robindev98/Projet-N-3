@@ -58,6 +58,8 @@ a {
     .menu--enchante i {
       display: flex;
       justify-content: center; }
+    .menu--enchante .txt1 {
+      font-weight: bold; }
   .menu--français {
     background-color: #E1BEE7;
     font-family: 'Montserrat-Regular', sans-serif;
@@ -74,6 +76,13 @@ a {
     transition: background-color 500ms; }
     .menu--français:hover {
       background-color: #f4e7f6; }
+    .menu--français .txt2 {
+      background: -webkit-linear-gradient(0deg, #c67412, #a56799, #6e4ccc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+      .menu--français .txt2__menu2 {
+        color: #c67412;
+        font-weight: bold; }
   .menu--papille {
     background-color: #80DEEA;
     font-family: 'GoudyStM', sans-serif;
@@ -89,6 +98,13 @@ a {
     transition: background-color 500ms; }
     .menu--papille:hover {
       background-color: #c2eff5; }
+    .menu--papille .txt3 {
+      background: -webkit-linear-gradient(0deg, #3949AB, #5C6BC0, #29B6F6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+      .menu--papille .txt3__menu3 {
+        color: #5C6BC0;
+        font-weight: bold; }
   .menu--gout {
     background-color: #EEEEEE;
     margin-left: 20px;
@@ -105,6 +121,13 @@ a {
     transition: background-color 500ms; }
     .menu--gout:hover {
       background-color: white; }
+    .menu--gout .txt4 {
+      background: -webkit-linear-gradient(0deg, #388E3C, #66BB6A, #CDDC39);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+      .menu--gout .txt4__menu4 {
+        color: #388E3C;
+        font-weight: bold; }
 
 nav .bigger {
   transform: scale(1);
@@ -132,13 +155,13 @@ footer {
   font-size: 1.5em;
   border-radius: 10px; }
   .foot__point:after {
-    /*overflow: hidden;
+    overflow: hidden;
     display: inline-block;
     vertical-align: bottom;
-    -webkit-animation: ellipsis steps(4,end) 900ms infinite; 
-    animation: ellipsis steps(4,end) 900ms infinite;    
+    -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+    animation: ellipsis steps(4, end) 900ms infinite;
     content: "\2026";
-    width: 0px; (code de rapprochement pour les points de suspension*/ }
+    width: 0.75em; }
   .foot__mention {
     /*onglet mentions légales + Contactez-nous*/
     max-height: 50px;
@@ -155,17 +178,12 @@ footer {
       .foot__mention p:hover {
         animation: shake 1s; }
 
-/*@keyframes ellipsis {
+@keyframes ellipsis {
   to {
-    width: 1.25em;    
-  }
-}
-
+    width: 1.25em; } }
 @-webkit-keyframes ellipsis {
   to {
-    width: 1.25em;    
-  }
-}*/
+    width: 1.25em; } }
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg); }
@@ -219,7 +237,10 @@ footer {
   font-family: 'Montserrat-Regular', sans-serif; }
   .planche2 h2 {
     font-size: 2em;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    background: -webkit-linear-gradient(0deg, #c67412, #a56799, #6e4ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
   .planche2 h3 {
     font-size: 1.2em; }
   .planche2 p {
@@ -243,7 +264,10 @@ footer {
   .planche3 h2 {
     font-size: 2.8em;
     margin-bottom: 60px;
-    margin-top: 60px; }
+    margin-top: 60px;
+    background: -webkit-linear-gradient(0deg, #3949AB, #5C6BC0, #29B6F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
   .planche3 h3 {
     font-size: 1.1em;
     font-weight: normal; }
@@ -258,7 +282,10 @@ footer {
   background-color: white;
   font-family: VTClettererpro-webfont, sans-serif; }
   .planche4 h2 {
-    font-size: 3em; }
+    font-size: 3em;
+    background: -webkit-linear-gradient(0deg, #388E3C, #66BB6A, #CDDC39);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
   .planche4 h3 {
     font-size: 1.1em;
     font-weight: normal; }
@@ -273,7 +300,10 @@ footer {
   background-color: #e7f2ee;
   font-family: Georgia, Verdana, Arial, sans-serif; }
   .planchemention h2 {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    background: -webkit-linear-gradient(#eee 0%, #333 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
   .planchemention p {
     text-align: justify; }
 
@@ -284,20 +314,20 @@ footer {
   .plat .under {
     display: flex;
     justify-content: space-between; }
-    .plat .under__center:hover > .line1 {
-      transform: scaleX(0); }
-    .plat .under__center:hover + .line2 {
+    .plat .under:hover .line1 {
+      transform: scaleX(1); }
+    .plat .under:hover .line2 {
       transform: scaleX(1); }
   .plat .line1 {
     background-color: red;
-    height: 20px;
+    height: 5px;
     width: 170px;
     transform-origin: right;
     transform: scaleX(0);
     transition: transform 1000ms; }
   .plat .line2 {
     background-color: red;
-    height: 20px;
+    height: 5px;
     width: 170px;
     transform-origin: left;
     transform: scaleX(0);

@@ -26,6 +26,7 @@ a {
         justify-content: space-around;
         text-align: center;
         margin-bottom: 20px;
+            
             &--enchante{
                 background-color: $darkpink;
                 color: black;
@@ -39,6 +40,9 @@ a {
                         display: flex;
                         justify-content: center;
                     }
+                .txt1 {
+                    font-weight: bold;
+                }    
             } 
             &--français {
                 background-color: $pink;
@@ -49,6 +53,15 @@ a {
                 &:hover {
                     background-color: lighten($pink, 11);
                 }
+                .txt2 {
+                background: -webkit-linear-gradient(0deg, $color-menu2-orange, $color-menu2-violet, $color-menu2-blue);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent; 
+                    &__menu2 {
+                        color: $color-menu2-orange;
+                        font-weight: bold;
+                    }
+                }
             }
             &--papille {
                 background-color: $blue; 
@@ -57,6 +70,15 @@ a {
                 transition: background-color 500ms;
                 &:hover {
                     background-color: lighten($blue, 15);
+                }
+                .txt3 {
+                background: -webkit-linear-gradient(0deg, $color-menu3-darkblue, $color-menu3-blue, $color-menu3-lightblue);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;                     
+                    &__menu3 {
+                        color: $color-menu3-blue;
+                        font-weight: bold;
+                    }
                 }
             }
             &--gout {
@@ -68,11 +90,20 @@ a {
                 &:hover {
                     background-color: lighten($white, 10); 
                 }
+                .txt4 {
+                background: -webkit-linear-gradient(0deg, $color-menu4-darkgreen, $color-menu4-green, $color-menu4-lightgreen); 
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent; 
+                    &__menu4 {
+                        color: $color-menu4-darkgreen;
+                        font-weight: bold;
+                    }                        
+                }
             }
 } 
 
 nav .bigger { 
-    @include formstyle; 
+        @include formstyle; 
 }
 
 footer {  
@@ -91,13 +122,13 @@ footer {
     font-size: 1.5em;
     border-radius: 10px;
     &__point:after {
-        /*overflow: hidden;
+        overflow: hidden;
         display: inline-block;
         vertical-align: bottom;
         -webkit-animation: ellipsis steps(4,end) 900ms infinite; 
         animation: ellipsis steps(4,end) 900ms infinite;    
         content: "\2026";
-        width: 0px; (code de rapprochement pour les points de suspension*/
+        width: 0.75em;
     }
         &__mention { /*onglet mentions légales + Contactez-nous*/
             max-height: 50px;
@@ -114,7 +145,7 @@ footer {
         }
     }
 
-/*@keyframes ellipsis {
+@keyframes ellipsis {
   to {
     width: 1.25em;    
   }
@@ -124,7 +155,7 @@ footer {
   to {
     width: 1.25em;    
   }
-}*/
+}
 
 
 @keyframes shake {
@@ -165,7 +196,10 @@ footer {
     font-family: 'Montserrat-Regular', sans-serif;
     h2 {
         font-size: 2em;
-        margin-bottom: 60px;  
+        margin-bottom: 60px; 
+        background: -webkit-linear-gradient(0deg, $color-menu2-orange, $color-menu2-violet, $color-menu2-blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
     }
     h3 {
         font-size: 1.2em;
@@ -192,12 +226,15 @@ footer {
         font-size: 2.8em;
         margin-bottom: 60px;
         margin-top: 60px;
+        background: -webkit-linear-gradient(0deg, $color-menu3-darkblue, $color-menu3-blue, $color-menu3-lightblue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
     }
     h3 {
         font-size: 1.1em;
         font-weight: normal;
     }
-}
+}  
 
 .planche4 {
     @include boxmenus;
@@ -205,10 +242,13 @@ footer {
     font-family:VTClettererpro-webfont, sans-serif;
     h2 {
         font-size: 3em;
+        background: -webkit-linear-gradient(0deg, $color-menu4-darkgreen, $color-menu4-green, $color-menu4-lightgreen); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;        
     }
     h3 { 
-        font-size: 1.1em;
-        font-weight: normal;
+        font-size: 1.1em;   
+        font-weight: normal;   
     }
 }
 
@@ -218,6 +258,9 @@ footer {
     font-family: Georgia, Verdana, Arial, sans-serif;
     h2 {
         font-size: 2.5rem;
+        background: -webkit-linear-gradient( #eee 0%, #333 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     p {
         text-align: justify;
@@ -231,16 +274,17 @@ footer {
     .under {
         display: flex;
         justify-content: space-between;
-        &__center {
+
         &:hover {
-            & > .line1 {
-                transform: scaleX(0);
-            }
-            & + .line2 {
+            .line1 {
                 transform: scaleX(1);
-                }
+            }
+            .line2 {
+                transform: scaleX(1);
+
             }
         }    
+
     }
     .line1 {
         @include formline; 
