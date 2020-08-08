@@ -6,9 +6,12 @@
 body { 
     border: 1px solid #EEEEEE; 
     height: 1000px;  
-    width: 99%;  
+    width: auto;  
+    @media all and (max-width: 1024px) {
+            width: auto;
+    }
 }
- 
+
 .logo {
     @include tag;
     justify-content: center;
@@ -22,24 +25,24 @@ a {
 }
   
 .menu {
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
+        display: flex; 
+        justify-content: space-around; 
+        text-align: center; 
         margin-bottom: 20px;
-            
             &--enchante{
                 background-color: $darkpink;
                 color: black;
                 font-family: 'KaushanScript-Regular', sans-serif;
                 @include box;
-                transition:  background-color 500ms;
+                @include queries;
+                transition:  background-color 500ms; 
                 &:hover {
                     background-color: lighten($darkpink, 10);
-                }
-                    & i { 
-                        display: flex;
-                        justify-content: center;
-                    }
+                }   
+                    & i {    
+                        display: flex; 
+                        justify-content: center; 
+                    } 
                 .txt1 {
                     font-weight: bold;
                 }    
@@ -49,6 +52,9 @@ a {
                 font-family: 'Montserrat-Regular', sans-serif;
                 margin-left: 20px;
                 @include box;
+                @include queries{
+                    margin-left: 0px;
+                }
                 transition: background-color 500ms;
                 &:hover {
                     background-color: lighten($pink, 11);
@@ -67,17 +73,18 @@ a {
                 background-color: $blue; 
                 font-family: 'GoudyStM', sans-serif;
                 @include box;
+                @include queries;
                 transition: background-color 500ms;
                 &:hover {
                     background-color: lighten($blue, 15);
-                }
+                }  
                 .txt3 {
-                background: -webkit-linear-gradient(0deg, $color-menu3-darkblue, $color-menu3-blue, $color-menu3-lightblue);
+                background: -webkit-linear-gradient(0deg, $color-menu3-darkblue, $color-menu3-lightblue);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;                     
                     &__menu3 {
-                        color: $color-menu3-blue;
-                        font-weight: bold;
+                        color: $color-menu3-darkblue;
+                        font-weight: bold; 
                     }
                 }
             }
@@ -86,12 +93,15 @@ a {
                 margin-left: 20px;
                 font-family: 'VTClettererpro-webfont', sans-serif; 
                 @include box;
+                @include queries{
+                    margin-left: 0px;
+                }
                 transition: background-color 500ms;
                 &:hover {
                     background-color: lighten($white, 10); 
                 }
                 .txt4 {
-                background: -webkit-linear-gradient(0deg, $color-menu4-darkgreen, $color-menu4-green, $color-menu4-lightgreen); 
+                background: -webkit-linear-gradient(0deg, $color-menu4-darkgreen, $color-menu4-lightgreen); 
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent; 
                     &__menu4 {
@@ -109,7 +119,7 @@ nav .bigger {
 footer {  
     text-align: center;
     position: fixed; 
-    bottom: 0px;
+    bottom: 0;
     width: 99%;
 }
 
@@ -128,7 +138,7 @@ footer {
         -webkit-animation: ellipsis steps(4,end) 900ms infinite; 
         animation: ellipsis steps(4,end) 900ms infinite;    
         content: "\2026";
-        width: 0.75em;
+        width: 0.1em;
     }
         &__mention { /*onglet mentions légales + Contactez-nous*/
             max-height: 50px;
@@ -195,8 +205,7 @@ footer {
     background-color: lighten($pink, 11);
     font-family: 'Montserrat-Regular', sans-serif;
     h2 {
-        font-size: 2em;
-        margin-bottom: 60px; 
+        font-size: 2em; 
         background: -webkit-linear-gradient(0deg, $color-menu2-orange, $color-menu2-violet, $color-menu2-blue);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent; 
@@ -226,12 +235,12 @@ footer {
         font-size: 2.8em;
         margin-bottom: 60px;
         margin-top: 60px;
-        background: -webkit-linear-gradient(0deg, $color-menu3-darkblue, $color-menu3-blue, $color-menu3-lightblue);
+        background: -webkit-linear-gradient(0deg, $color-menu3-darkblue, $color-menu3-lightblue);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent; 
     }
     h3 {
-        font-size: 1.1em;
+        font-size: 1.1em; 
         font-weight: normal;
     }
 }  
@@ -242,7 +251,7 @@ footer {
     font-family:VTClettererpro-webfont, sans-serif;
     h2 {
         font-size: 3em;
-        background: -webkit-linear-gradient(0deg, $color-menu4-darkgreen, $color-menu4-green, $color-menu4-lightgreen); 
+        background: -webkit-linear-gradient(0deg, $color-menu4-darkgreen, $color-menu4-lightgreen); 
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;        
     }
@@ -258,27 +267,29 @@ footer {
     font-family: Georgia, Verdana, Arial, sans-serif;
     h2 {
         font-size: 2.5rem;
-        background: -webkit-linear-gradient( #eee 0%, #333 100%);
+        background: -webkit-linear-gradient(0deg, $color-primary, $second-color);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    p {
+    p { 
         text-align: justify;
+        font-size: 0.9em;
+        font-style: italic;
     }
 }
 
     
 .plat { /* animation bordure + disposition paragraphe menu*/
-    margin-right: 20px; 
-    margin-left: 20px;
+    margin-right: 15px; 
+    margin-left: 15px;
     .under {
         display: flex;
         justify-content: space-between;
-
+        align-items:center;
         &:hover {
             .line1 {
                 transform: scaleX(1);
-            }
+            }   
             .line2 {
                 transform: scaleX(1);
 
@@ -286,9 +297,9 @@ footer {
         }    
 
     }
-    .line1 {
+    .line1 { 
         @include formline; 
-        transform-origin: right;
+        transform-origin: right; 
         transform: scaleX(0);
         transition: transform 1000ms;
     } 
@@ -306,3 +317,4 @@ footer {
         } 
     }
 }
+

@@ -5,16 +5,23 @@
     color: $second-color;
     background-color: $color-primary;
 } 
+
 @mixin box {
     box-shadow: 1px 1px 5px 1px #E0E0E0;
-    width: 280px; 
+    max-width: 280px;
+    width: 280px;
     height: 350px;
     font-size: 1.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: flex-end; /* a revoir si changemtn de taille pour le mot menu */
 } 
+@mixin queries {
+    @media all and (max-width: 650px) {
+            max-width: 210px;
+            @content;
+        }
+}
 @mixin boxmenus {
     box-shadow: 1px 1px 5px 1px #E0E0E0;
     max-width: 550px;
@@ -23,6 +30,7 @@
     margin: auto;
     text-align: center;
 }
+
 @mixin formstyle {
     transform: scale(1);
     transition: transform 400ms;
@@ -31,7 +39,7 @@
     }
 }
 @mixin formline {
-    background-color: red;
+    background-color: black;
     height:5px;
-    width: 170px;
+    width: 160px;
 }
