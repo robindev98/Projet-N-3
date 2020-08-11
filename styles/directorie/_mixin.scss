@@ -38,8 +38,28 @@
         transform: scale(1.15);
     }
 }
-@mixin formline {
-    background-color: black;
+@mixin formlinemenu1 {
     height:5px;
+    transform: scaleX(0);
+    transition: transform 1000ms;
+    background-color: black;
     width: 160px;
+}
+@mixin formlinemenu2 {
+    height:5px;
+    transform: scaleX(0);
+    transition: transform 1000ms;
+    width: 120px;
+}
+@mixin formlinemenu3 {
+    height:5px;
+    transform: scaleX(0);
+    transition: transform 1000ms;
+    width: 150px; 
+}
+@mixin formlinemenu4 {
+    height: 5px;
+    transform: scaleX(0);
+    transition: transform 1000ms;
+    width: 140px;
 }

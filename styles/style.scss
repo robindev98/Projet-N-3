@@ -23,6 +23,12 @@ body {
 a {
     text-decoration: none;
 }
+    
+i {
+    background: -webkit-linear-gradient(90deg, $color-imusic-reddark, $color-imusic-redlight);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;       
+}
   
 .menu {
         display: flex; 
@@ -59,6 +65,7 @@ a {
                 &:hover {
                     background-color: lighten($pink, 11);
                 }
+
                 .txt2 {
                 background: -webkit-linear-gradient(0deg, $color-menu2-orange, $color-menu2-violet, $color-menu2-blue);
                     -webkit-background-clip: text;
@@ -79,7 +86,7 @@ a {
                     background-color: lighten($blue, 15);
                 }  
                 .txt3 {
-                background: -webkit-linear-gradient(0deg, $color-menu3-darkblue, $color-menu3-lightblue);
+                background: -webkit-linear-gradient(0deg, $color-menu3-darkblue,$color-menu3-blue, $color-menu3-lightblue);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;                     
                     &__menu3 {
@@ -182,10 +189,9 @@ footer {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-.planche1 {  
+.planche1 {  /* MENU 1 LA NOTE ENCHANTE*/
     @include boxmenus;
     background-color: lighten($darkpink, 10);
-    /* background color en couleur à opacité réduite donc rose*/
     font-family: 'KaushanScript-Regular', sans-serif;
     h2 {
         font-size: 2.5em;
@@ -198,9 +204,12 @@ footer {
     h4 {
         font-size: 1.5em;
     } 
+    p {
+        font-size: 0.93em;
+    }
 } 
  
-.planche2 {
+.planche2 { /* MENU 2 LE CHIX A LA FRANCAISE*/
     @include boxmenus;
     background-color: lighten($pink, 11);
     font-family: 'Montserrat-Regular', sans-serif;
@@ -227,7 +236,7 @@ footer {
     }
 }
 
-.planche3 {
+.planche3 { /*MENU 3 LE DELICE DES PAPILLES*/
     @include boxmenus;
     background-color: lighten($blue, 15);
     font-family: 'GoudyStM', sans-serif;
@@ -235,7 +244,7 @@ footer {
         font-size: 2.8em;
         margin-bottom: 60px;
         margin-top: 60px;
-        background: -webkit-linear-gradient(0deg, $color-menu3-darkblue, $color-menu3-lightblue);
+        background: -webkit-linear-gradient(0deg, $color-menu3-darkblue,$color-menu3-blue, $color-menu3-lightblue);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent; 
     }
@@ -245,7 +254,7 @@ footer {
     }
 }  
 
-.planche4 {
+.planche4 { /*MENU 4 LA PALETTE DU GOUT*/
     @include boxmenus;
     background-color: lighten($white, 10);
     font-family:VTClettererpro-webfont, sans-serif;
@@ -261,7 +270,7 @@ footer {
     }
 }
 
-.planchemention {
+.planchemention { /* PAGE MENTION LEGALE */
     @include boxmenus;
     background-color: lighten($color-primary, 45);
     font-family: Georgia, Verdana, Arial, sans-serif;
@@ -285,31 +294,104 @@ footer {
     .under {
         display: flex;
         justify-content: space-between;
-        align-items:center;
-        &:hover {
-            .line1 {
+        align-items:center; 
+        height: 50px;
+        &:hover { /*Animation border MENU */
+            .line1 { 
                 transform: scaleX(1);
             }   
             .line2 {
                 transform: scaleX(1);
-
-            }
+            }  
         }    
-
     }
-    .line1 { 
-        @include formline; 
+    .line1menu1 { 
+        @include formlinemenu1; 
         transform-origin: right; 
-        transform: scaleX(0);
-        transition: transform 1000ms;
     } 
-    .line2 { 
-        @include formline;
+    .line2menu1 {  
+        @include formlinemenu1;
         transform-origin: left;
-        transform: scaleX(0);
-        transition: transform 1000ms;
     }
-    .main {
+
+
+    .line1menu2 {
+        @include formlinemenu2;
+        background-color: $color-menu2-orange;
+        transform-origin: right;
+        &_1 {
+            @include formlinemenu2;
+            background-color: $color-menu2-violet;
+            transform-origin: right;
+        }
+        &__1 {
+            @include formlinemenu2;
+            background-color: $color-menu2-blue;
+            transform-origin: right;
+        } 
+    } 
+    .line2menu2 {
+        @include formlinemenu2;
+        background-color: $color-menu2-orange;
+        transform-origin: left;
+        &_2 {
+            @include formlinemenu2;
+            background-color: $color-menu2-violet;
+            transform-origin: left;
+        }
+        &__2 {
+            @include formlinemenu2;
+            background-color: $color-menu2-blue;
+            transform-origin: left; 
+        }
+    } 
+
+    .line1menu3 {
+        @include formlinemenu3; 
+        background-color: $color-menu3-darkblue;
+        transform-origin: right;
+        &_1 {
+            @include formlinemenu3;
+            background-color: $color-menu3-blue;
+            transform-origin: right;
+        }
+        &__1 {
+            @include formlinemenu3;
+            background-color: $color-menu3-lightblue;
+            transform-origin: right;
+        }
+    }
+    .line2menu3 {
+        @include formlinemenu3; 
+        background-color: $color-menu3-darkblue;
+        transform-origin: left;
+        &_2 {
+            @include formlinemenu3;
+            background-color: $color-menu3-blue;
+            transform-origin: left;
+        }
+        &__2 {
+            @include formlinemenu3;
+            background-color: $color-menu3-lightblue;
+            transform-origin: left;
+        }
+    }
+
+    .line1menu4 {
+        @include formlinemenu4;
+        background: -webkit-linear-gradient(0deg, $color-menu4-darkgreen, $color-menu4-lightgreen);
+            -webkit-background-clip: border;
+            -webkit-text-fill-color: transparent;
+        transform-origin: right;
+    }
+    .line2menu4 {
+        @include formlinemenu4;
+        background: -webkit-linear-gradient(180deg, $color-menu4-darkgreen, $color-menu4-lightgreen);
+            -webkit-background-clip: border;
+            -webkit-text-fill-color: transparent;
+        transform-origin: left;
+    }
+    .main { 
         text-align: left;
         &__euro {
             float: right;
