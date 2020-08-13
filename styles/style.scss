@@ -4,9 +4,7 @@
  
  
 body { 
-    border: 1px solid #EEEEEE; 
     height: 1000px;  
-    width: auto;  
     @media all and (max-width: 1024px) {
             width: auto;
     }
@@ -127,7 +125,8 @@ footer {
     text-align: center;
     position: fixed; 
     bottom: 0;
-    width: 99%;
+    left: 0;
+    width: 100%;
 }
 
 .foot { /* onglet prochainement */
