@@ -45,6 +45,11 @@ i {
   justify-content: space-around;
   text-align: center;
   margin-bottom: 20px; }
+  @media all and (max-device-width: 480px) {
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
   .menu--enchante {
     background-color: #F48FB1;
     color: black;
@@ -58,9 +63,6 @@ i {
     flex-direction: column;
     justify-content: center;
     transition: background-color 500ms; }
-    @media all and (max-width: 650px) {
-      .menu--enchante {
-        max-width: 210px; } }
     .menu--enchante:hover {
       background-color: #f9bdd1; }
     .menu--enchante i {
@@ -81,9 +83,9 @@ i {
     flex-direction: column;
     justify-content: center;
     transition: background-color 500ms; }
-    @media all and (max-width: 650px) {
+    @media all and (max-device-width: 480px) {
       .menu--français {
-        max-width: 210px;
+        margin-top: 20px;
         margin-left: 0px; } }
     .menu--français:hover {
       background-color: #f4e7f6; }
@@ -106,9 +108,6 @@ i {
     flex-direction: column;
     justify-content: center;
     transition: background-color 500ms; }
-    @media all and (max-width: 650px) {
-      .menu--papille {
-        max-width: 210px; } }
     .menu--papille:hover {
       background-color: #c2eff5; }
     .menu--papille .txt3 {
@@ -131,10 +130,11 @@ i {
     flex-direction: column;
     justify-content: center;
     transition: background-color 500ms; }
-    @media all and (max-width: 650px) {
+    @media all and (max-device-width: 480px) {
       .menu--gout {
-        max-width: 210px;
-        margin-left: 0px; } }
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-bottom: 120px; } }
     .menu--gout:hover {
       background-color: white; }
     .menu--gout .txt4 {
@@ -193,6 +193,7 @@ footer {
     .foot__mention p {
       color: #fdcb46; }
       .foot__mention p:hover {
+        -webkit-animation: shake 1s;
         animation: shake 1s; }
 
 @keyframes ellipsis {
@@ -201,6 +202,29 @@ footer {
 @-webkit-keyframes ellipsis {
   to {
     width: 1.25em; } }
+@-webkit-keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg); }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg); }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg); }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg); }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg); }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg); } }
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg); }
@@ -234,6 +258,10 @@ footer {
   text-align: center;
   background-color: #f9bdd1;
   font-family: 'KaushanScript-Regular', sans-serif; }
+  @media all and (max-device-width: 480px) {
+    .planche1 {
+      margin-bottom: 80px;
+      height: 1020px; } }
   .planche1 h2 {
     font-size: 2.5em;
     margin-bottom: 0px; }
@@ -321,6 +349,10 @@ footer {
   text-align: center;
   background-color: #e7f2ee;
   font-family: Georgia, Verdana, Arial, sans-serif; }
+  @media all and (max-device-width: 480px) {
+    .planchemention {
+      margin-bottom: 80px;
+      height: 1000px; } }
   .planchemention h2 {
     font-size: 2.5rem;
     background: -webkit-linear-gradient(0deg, #579c87, #fdcb46);
@@ -353,6 +385,9 @@ footer {
     background-color: black;
     width: 160px;
     transform-origin: right; }
+    @media all and (max-device-width: 480px) {
+      .plat .line1menu1 {
+        width: 100px; } }
   .plat .line2menu1 {
     height: 5px;
     transform: scaleX(0);
@@ -360,6 +395,9 @@ footer {
     background-color: black;
     width: 160px;
     transform-origin: left; }
+    @media all and (max-device-width: 480px) {
+      .plat .line2menu1 {
+        width: 100px; } }
   .plat .line1menu2 {
     height: 5px;
     transform: scaleX(0);
@@ -453,6 +491,9 @@ footer {
     -webkit-background-clip: border;
     -webkit-text-fill-color: transparent;
     transform-origin: right; }
+    @media all and (max-device-width: 480px) {
+      .plat .line1menu4 {
+        width: 100px; } }
   .plat .line2menu4 {
     height: 5px;
     transform: scaleX(0);
@@ -462,6 +503,9 @@ footer {
     -webkit-background-clip: border;
     -webkit-text-fill-color: transparent;
     transform-origin: left; }
+    @media all and (max-device-width: 480px) {
+      .plat .line2menu4 {
+        width: 100px; } }
   .plat .main {
     text-align: left; }
     .plat .main__euro {

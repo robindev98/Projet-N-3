@@ -16,10 +16,27 @@
     flex-direction: column;
     justify-content: center;
 } 
+
+@mixin queriesmain {
+    @media all and (max-device-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@mixin queriesmenu {
+    @media all and (max-device-width: 480px) {
+        margin-top: 20px;
+        margin-left: 0px;        
+        @content
+    }
+}
+
 @mixin queries {
-    @media all and (max-width: 650px) {
-            max-width: 210px;
-            @content;
+    @media all and (max-device-width: 480px) {
+            margin-bottom: 80px;
+            @content
         }
 }
 @mixin boxmenus {
@@ -44,6 +61,9 @@
     transition: transform 1000ms;
     background-color: black;
     width: 160px;
+    @media all and (max-device-width: 480px) {
+        width: 100px;
+    }
 }
 @mixin formlinemenu2 {
     height:5px;
@@ -62,4 +82,7 @@
     transform: scaleX(0);
     transition: transform 1000ms;
     width: 140px;
+    @media all and (max-device-width: 480px) {
+        width: 100px;
+    }
 }
