@@ -17,9 +17,6 @@
   src: url("../font/GoudyStM?#iefix") format("embedded-opentype"), url("../font/GoudyStM.woff2") format("woff2"), url("../font/GoudyStM.woff") format("woff"), url("../font/GoudyStM.ttf") format("truetype"), url("../font/GoudyStM.svg#GoudyStM") format("svg"); }
 body {
   height: 1000px; }
-  @media all and (max-width: 1024px) {
-    body {
-      width: auto; } }
 
 .logo {
   font-family: 'Arial', sans-serif;
@@ -45,7 +42,7 @@ i {
   justify-content: space-around;
   text-align: center;
   margin-bottom: 20px; }
-  @media all and (max-device-width: 480px) {
+  @media all and (max-width: 700px) {
     .menu {
       display: flex;
       flex-direction: column;
@@ -70,7 +67,7 @@ i {
       justify-content: center; }
     .menu--enchante .txt1 {
       font-weight: bold; }
-  .menu--français {
+  .menu--francais {
     background-color: #E1BEE7;
     font-family: 'Montserrat-Regular', sans-serif;
     margin-left: 20px;
@@ -83,17 +80,17 @@ i {
     flex-direction: column;
     justify-content: center;
     transition: background-color 500ms; }
-    @media all and (max-device-width: 480px) {
-      .menu--français {
+    @media all and (max-width: 700px) {
+      .menu--francais {
         margin-top: 20px;
         margin-left: 0px; } }
-    .menu--français:hover {
+    .menu--francais:hover {
       background-color: #f4e7f6; }
-    .menu--français .txt2 {
+    .menu--francais .txt2 {
       background: -webkit-linear-gradient(0deg, #c67412, #a56799, #6e4ccc);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-      .menu--français .txt2__menu2 {
+      .menu--francais .txt2__menu2 {
         color: #c67412;
         font-weight: bold; }
   .menu--papille {
@@ -130,7 +127,7 @@ i {
     flex-direction: column;
     justify-content: center;
     transition: background-color 500ms; }
-    @media all and (max-device-width: 480px) {
+    @media all and (max-width: 700px) {
       .menu--gout {
         margin-top: 20px;
         margin-left: 0px;
@@ -258,7 +255,7 @@ footer {
   text-align: center;
   background-color: #f9bdd1;
   font-family: 'KaushanScript-Regular', sans-serif; }
-  @media all and (max-device-width: 480px) {
+  @media all and (max-width: 480px) {
     .planche1 {
       margin-bottom: 80px;
       height: 1020px; } }
@@ -349,7 +346,7 @@ footer {
   text-align: center;
   background-color: #e7f2ee;
   font-family: Georgia, Verdana, Arial, sans-serif; }
-  @media all and (max-device-width: 480px) {
+  @media all and (max-width: 480px) {
     .planchemention {
       margin-bottom: 80px;
       height: 1000px; } }
@@ -385,7 +382,7 @@ footer {
     background-color: black;
     width: 160px;
     transform-origin: right; }
-    @media all and (max-device-width: 480px) {
+    @media all and (max-width: 480px) {
       .plat .line1menu1 {
         width: 100px; } }
   .plat .line2menu1 {
@@ -395,7 +392,7 @@ footer {
     background-color: black;
     width: 160px;
     transform-origin: left; }
-    @media all and (max-device-width: 480px) {
+    @media all and (max-width: 480px) {
       .plat .line2menu1 {
         width: 100px; } }
   .plat .line1menu2 {
@@ -491,7 +488,7 @@ footer {
     -webkit-background-clip: border;
     -webkit-text-fill-color: transparent;
     transform-origin: right; }
-    @media all and (max-device-width: 480px) {
+    @media all and (max-width: 480px) {
       .plat .line1menu4 {
         width: 100px; } }
   .plat .line2menu4 {
@@ -503,7 +500,7 @@ footer {
     -webkit-background-clip: border;
     -webkit-text-fill-color: transparent;
     transform-origin: left; }
-    @media all and (max-device-width: 480px) {
+    @media all and (max-width: 480px) {
       .plat .line2menu4 {
         width: 100px; } }
   .plat .main {

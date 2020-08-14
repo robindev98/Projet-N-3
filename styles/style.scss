@@ -5,9 +5,6 @@
  
 body { 
     height: 1000px;  
-    @media all and (max-width: 1024px) {
-            width: auto;
-    }
 }
 
 .logo {
@@ -51,7 +48,7 @@ i {
                     font-weight: bold;
                 }    
             } 
-            &--français {
+            &--francais {
                 background-color: $pink;
                 font-family: 'Montserrat-Regular', sans-serif;
                 margin-left: 20px;
@@ -61,7 +58,6 @@ i {
                 &:hover {
                     background-color: lighten($pink, 11);
                 }
-
                 .txt2 {
                 background: -webkit-linear-gradient(0deg, $color-menu2-orange, $color-menu2-violet, $color-menu2-blue);
                     -webkit-background-clip: text;
@@ -416,5 +412,4 @@ footer {
             font-weight: bold;
         } 
     }
-}
-
+} 

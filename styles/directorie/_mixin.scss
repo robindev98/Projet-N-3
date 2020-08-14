@@ -18,7 +18,7 @@
 } 
 
 @mixin queriesmain {
-    @media all and (max-device-width: 480px) {
+    @media all and (max-width: 700px) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -26,7 +26,7 @@
 }
 
 @mixin queriesmenu {
-    @media all and (max-device-width: 480px) {
+    @media all and (max-width: 700px) {
         margin-top: 20px;
         margin-left: 0px;        
         @content
@@ -34,7 +34,7 @@
 }
 
 @mixin queries {
-    @media all and (max-device-width: 480px) {
+    @media all and (max-width: 480px) {
             margin-bottom: 80px;
             @content
         }
@@ -61,7 +61,7 @@
     transition: transform 1000ms;
     background-color: black;
     width: 160px;
-    @media all and (max-device-width: 480px) {
+    @media all and (max-width: 480px) {
         width: 100px;
     }
 }
@@ -82,7 +82,7 @@
     transform: scaleX(0);
     transition: transform 1000ms;
     width: 140px;
-    @media all and (max-device-width: 480px) {
+    @media all and (max-width: 480px) {
         width: 100px;
     }
 }
