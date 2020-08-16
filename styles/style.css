@@ -20,7 +20,13 @@ body {
 
 .logo {
   font-family: 'Arial', sans-serif;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: #fdcb46;
   background-color: #579c87;
@@ -51,20 +57,43 @@ i {
   margin-bottom: 20px; }
   @media all and (max-width: 700px) {
     .menu {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -moz-box-orient: vertical;
+      -moz-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
       align-items: center; } }
   .menu--enchante {
     background-color: #F48FB1;
     color: black;
     font-family: 'KaushanScript-Regular', sans-serif;
+    -webkit-box-shadow: 1px 1px 5px 1px #E0E0E0;
     box-shadow: 1px 1px 5px 1px #E0E0E0;
     max-width: 280px;
     width: 280px;
     height: 350px;
     font-size: 1.5em;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     -webkit-transition: background-color 500ms;
     -o-transition: background-color 500ms;
@@ -87,13 +116,25 @@ i {
     background-color: #E1BEE7;
     font-family: 'Montserrat-Regular', sans-serif;
     margin-left: 20px;
+    -webkit-box-shadow: 1px 1px 5px 1px #E0E0E0;
     box-shadow: 1px 1px 5px 1px #E0E0E0;
     max-width: 280px;
     width: 280px;
     height: 350px;
     font-size: 1.5em;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     -webkit-transition: background-color 500ms;
     -o-transition: background-color 500ms;
@@ -115,13 +156,25 @@ i {
   .menu--papille {
     background-color: #80DEEA;
     font-family: 'GoudyStM', sans-serif;
+    -webkit-box-shadow: 1px 1px 5px 1px #E0E0E0;
     box-shadow: 1px 1px 5px 1px #E0E0E0;
     max-width: 280px;
     width: 280px;
     height: 350px;
     font-size: 1.5em;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     -webkit-transition: background-color 500ms;
     -o-transition: background-color 500ms;
@@ -140,13 +193,25 @@ i {
     background-color: #EEEEEE;
     margin-left: 20px;
     font-family: 'VTClettererpro-webfont', sans-serif;
+    -webkit-box-shadow: 1px 1px 5px 1px #E0E0E0;
     box-shadow: 1px 1px 5px 1px #E0E0E0;
     max-width: 280px;
     width: 280px;
     height: 350px;
     font-size: 1.5em;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     -webkit-transition: background-color 500ms;
     -o-transition: background-color 500ms;
@@ -168,9 +233,20 @@ i {
         font-weight: bold; }
 
 nav .bigger {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
-  transition: transform 400ms; }
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  -o-transition: transform 400ms;
+  -moz-transition: transform 400ms, -moz-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms, -moz-transform 400ms; }
   nav .bigger:hover {
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
     transform: scale(1.15); }
 
 footer {
@@ -183,7 +259,13 @@ footer {
 .foot {
   /* onglet prochainement */
   font-family: 'Arial', sans-serif;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: #fdcb46;
   background-color: #579c87;
@@ -211,7 +293,13 @@ footer {
     font-size: 1.3em;
     margin-top: 30px;
     font-family: 'Arial', sans-serif;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     color: #fdcb46;
     background-color: #579c87;
@@ -359,6 +447,7 @@ footer {
     transform: translate(1px, -2px) rotate(-1deg); } }
 .planche1 {
   /* MENU 1 LA NOTE ENCHANTE*/
+  -webkit-box-shadow: 1px 1px 5px 1px #E0E0E0;
   box-shadow: 1px 1px 5px 1px #E0E0E0;
   max-width: 550px;
   height: 760px;
@@ -390,6 +479,7 @@ footer {
 
 .planche2 {
   /* MENU 2 LE CHIX A LA FRANCAISE*/
+  -webkit-box-shadow: 1px 1px 5px 1px #E0E0E0;
   box-shadow: 1px 1px 5px 1px #E0E0E0;
   max-width: 550px;
   height: 760px;
@@ -416,6 +506,7 @@ footer {
 
 .planche3 {
   /*MENU 3 LE DELICE DES PAPILLES*/
+  -webkit-box-shadow: 1px 1px 5px 1px #E0E0E0;
   box-shadow: 1px 1px 5px 1px #E0E0E0;
   max-width: 550px;
   height: 760px;
@@ -437,6 +528,7 @@ footer {
 
 .planche4 {
   /*MENU 4 LA PALETTE DU GOUT*/
+  -webkit-box-shadow: 1px 1px 5px 1px #E0E0E0;
   box-shadow: 1px 1px 5px 1px #E0E0E0;
   max-width: 550px;
   height: 760px;
@@ -456,6 +548,7 @@ footer {
 
 .planchemention {
   /* PAGE MENTION LEGALE */
+  -webkit-box-shadow: 1px 1px 5px 1px #E0E0E0;
   box-shadow: 1px 1px 5px 1px #E0E0E0;
   max-width: 550px;
   height: 760px;
@@ -510,8 +603,16 @@ footer {
         transform: scaleX(1); }
   .plat .line1menu1 {
     height: 5px;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
     transform: scaleX(0);
+    -webkit-transition: -webkit-transform 1000ms;
+    transition: -webkit-transform 1000ms;
+    -o-transition: transform 1000ms;
+    -moz-transition: transform 1000ms, -moz-transform 1000ms;
     transition: transform 1000ms;
+    transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms;
     background-color: black;
     width: 160px;
     -webkit-transform-origin: right;
@@ -523,8 +624,16 @@ footer {
         width: 100px; } }
   .plat .line2menu1 {
     height: 5px;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
     transform: scaleX(0);
+    -webkit-transition: -webkit-transform 1000ms;
+    transition: -webkit-transform 1000ms;
+    -o-transition: transform 1000ms;
+    -moz-transition: transform 1000ms, -moz-transform 1000ms;
     transition: transform 1000ms;
+    transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms;
     background-color: black;
     width: 160px;
     -webkit-transform-origin: left;
@@ -536,8 +645,16 @@ footer {
         width: 100px; } }
   .plat .line1menu2 {
     height: 5px;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
     transform: scaleX(0);
+    -webkit-transition: -webkit-transform 1000ms;
+    transition: -webkit-transform 1000ms;
+    -o-transition: transform 1000ms;
+    -moz-transition: transform 1000ms, -moz-transform 1000ms;
     transition: transform 1000ms;
+    transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms;
     width: 120px;
     background-color: #c67412;
     -webkit-transform-origin: right;
@@ -546,8 +663,16 @@ footer {
     transform-origin: right; }
     .plat .line1menu2_1 {
       height: 5px;
+      -webkit-transform: scaleX(0);
+      -moz-transform: scaleX(0);
+      -ms-transform: scaleX(0);
       transform: scaleX(0);
+      -webkit-transition: -webkit-transform 1000ms;
+      transition: -webkit-transform 1000ms;
+      -o-transition: transform 1000ms;
+      -moz-transition: transform 1000ms, -moz-transform 1000ms;
       transition: transform 1000ms;
+      transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms;
       width: 120px;
       background-color: #a56799;
       -webkit-transform-origin: right;
@@ -556,8 +681,16 @@ footer {
       transform-origin: right; }
     .plat .line1menu2__1 {
       height: 5px;
+      -webkit-transform: scaleX(0);
+      -moz-transform: scaleX(0);
+      -ms-transform: scaleX(0);
       transform: scaleX(0);
+      -webkit-transition: -webkit-transform 1000ms;
+      transition: -webkit-transform 1000ms;
+      -o-transition: transform 1000ms;
+      -moz-transition: transform 1000ms, -moz-transform 1000ms;
       transition: transform 1000ms;
+      transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms;
       width: 120px;
       background-color: #6e4ccc;
       -webkit-transform-origin: right;
@@ -566,8 +699,16 @@ footer {
       transform-origin: right; }
   .plat .line2menu2 {
     height: 5px;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
     transform: scaleX(0);
+    -webkit-transition: -webkit-transform 1000ms;
+    transition: -webkit-transform 1000ms;
+    -o-transition: transform 1000ms;
+    -moz-transition: transform 1000ms, -moz-transform 1000ms;
     transition: transform 1000ms;
+    transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms;
     width: 120px;
     background-color: #c67412;
     -webkit-transform-origin: left;
@@ -576,8 +717,16 @@ footer {
     transform-origin: left; }
     .plat .line2menu2_2 {
       height: 5px;
+      -webkit-transform: scaleX(0);
+      -moz-transform: scaleX(0);
+      -ms-transform: scaleX(0);
       transform: scaleX(0);
+      -webkit-transition: -webkit-transform 1000ms;
+      transition: -webkit-transform 1000ms;
+      -o-transition: transform 1000ms;
+      -moz-transition: transform 1000ms, -moz-transform 1000ms;
       transition: transform 1000ms;
+      transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms;
       width: 120px;
       background-color: #a56799;
       -webkit-transform-origin: left;
@@ -586,8 +735,16 @@ footer {
       transform-origin: left; }
     .plat .line2menu2__2 {
       height: 5px;
+      -webkit-transform: scaleX(0);
+      -moz-transform: scaleX(0);
+      -ms-transform: scaleX(0);
       transform: scaleX(0);
+      -webkit-transition: -webkit-transform 1000ms;
+      transition: -webkit-transform 1000ms;
+      -o-transition: transform 1000ms;
+      -moz-transition: transform 1000ms, -moz-transform 1000ms;
       transition: transform 1000ms;
+      transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms;
       width: 120px;
       background-color: #6e4ccc;
       -webkit-transform-origin: left;
@@ -596,8 +753,16 @@ footer {
       transform-origin: left; }
   .plat .line1menu3 {
     height: 5px;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
     transform: scaleX(0);
+    -webkit-transition: -webkit-transform 1000ms;
+    transition: -webkit-transform 1000ms;
+    -o-transition: transform 1000ms;
+    -moz-transition: transform 1000ms, -moz-transform 1000ms;
     transition: transform 1000ms;
+    transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms;
     width: 150px;
     background-color: #3949AB;
     -webkit-transform-origin: right;
@@ -606,8 +771,16 @@ footer {
     transform-origin: right; }
     .plat .line1menu3_1 {
       height: 5px;
+      -webkit-transform: scaleX(0);
+      -moz-transform: scaleX(0);
+      -ms-transform: scaleX(0);
       transform: scaleX(0);
+      -webkit-transition: -webkit-transform 1000ms;
+      transition: -webkit-transform 1000ms;
+      -o-transition: transform 1000ms;
+      -moz-transition: transform 1000ms, -moz-transform 1000ms;
       transition: transform 1000ms;
+      transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms;
       width: 150px;
       background-color: #1E88E5;
       -webkit-transform-origin: right;
@@ -616,8 +789,16 @@ footer {
       transform-origin: right; }
     .plat .line1menu3__1 {
       height: 5px;
+      -webkit-transform: scaleX(0);
+      -moz-transform: scaleX(0);
+      -ms-transform: scaleX(0);
       transform: scaleX(0);
+      -webkit-transition: -webkit-transform 1000ms;
+      transition: -webkit-transform 1000ms;
+      -o-transition: transform 1000ms;
+      -moz-transition: transform 1000ms, -moz-transform 1000ms;
       transition: transform 1000ms;
+      transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms;
       width: 150px;
       background-color: #29B6F6;
       -webkit-transform-origin: right;
@@ -626,8 +807,16 @@ footer {
       transform-origin: right; }
   .plat .line2menu3 {
     height: 5px;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
     transform: scaleX(0);
+    -webkit-transition: -webkit-transform 1000ms;
+    transition: -webkit-transform 1000ms;
+    -o-transition: transform 1000ms;
+    -moz-transition: transform 1000ms, -moz-transform 1000ms;
     transition: transform 1000ms;
+    transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms;
     width: 150px;
     background-color: #3949AB;
     -webkit-transform-origin: left;
@@ -636,8 +825,16 @@ footer {
     transform-origin: left; }
     .plat .line2menu3_2 {
       height: 5px;
+      -webkit-transform: scaleX(0);
+      -moz-transform: scaleX(0);
+      -ms-transform: scaleX(0);
       transform: scaleX(0);
+      -webkit-transition: -webkit-transform 1000ms;
+      transition: -webkit-transform 1000ms;
+      -o-transition: transform 1000ms;
+      -moz-transition: transform 1000ms, -moz-transform 1000ms;
       transition: transform 1000ms;
+      transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms;
       width: 150px;
       background-color: #1E88E5;
       -webkit-transform-origin: left;
@@ -646,8 +843,16 @@ footer {
       transform-origin: left; }
     .plat .line2menu3__2 {
       height: 5px;
+      -webkit-transform: scaleX(0);
+      -moz-transform: scaleX(0);
+      -ms-transform: scaleX(0);
       transform: scaleX(0);
+      -webkit-transition: -webkit-transform 1000ms;
+      transition: -webkit-transform 1000ms;
+      -o-transition: transform 1000ms;
+      -moz-transition: transform 1000ms, -moz-transform 1000ms;
       transition: transform 1000ms;
+      transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms;
       width: 150px;
       background-color: #29B6F6;
       -webkit-transform-origin: left;
@@ -656,8 +861,16 @@ footer {
       transform-origin: left; }
   .plat .line1menu4 {
     height: 5px;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
     transform: scaleX(0);
+    -webkit-transition: -webkit-transform 1000ms;
+    transition: -webkit-transform 1000ms;
+    -o-transition: transform 1000ms;
+    -moz-transition: transform 1000ms, -moz-transform 1000ms;
     transition: transform 1000ms;
+    transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms;
     width: 140px;
     background: -webkit-linear-gradient(0deg, #388E3C, #DCE775);
     -webkit-background-clip: border;
@@ -671,8 +884,16 @@ footer {
         width: 100px; } }
   .plat .line2menu4 {
     height: 5px;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
     transform: scaleX(0);
+    -webkit-transition: -webkit-transform 1000ms;
+    transition: -webkit-transform 1000ms;
+    -o-transition: transform 1000ms;
+    -moz-transition: transform 1000ms, -moz-transform 1000ms;
     transition: transform 1000ms;
+    transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms;
     width: 140px;
     background: -webkit-linear-gradient(180deg, #388E3C, #DCE775);
     -webkit-background-clip: border;

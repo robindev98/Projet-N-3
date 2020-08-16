@@ -1,27 +1,56 @@
 @mixin tag {
     font-family: 'Arial', sans-serif;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: $second-color;
     background-color: $color-primary;
 } 
 
 @mixin box {
-    box-shadow: 1px 1px 5px 1px #E0E0E0;
+    -webkit-box-shadow: 1px 1px 5px 1px #E0E0E0;
+            box-shadow: 1px 1px 5px 1px #E0E0E0;
     max-width: 280px;
     width: 280px;
     height: 350px;
     font-size: 1.5em;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 } 
 
 @mixin queriesmain {
     @media all and (max-width: 700px) {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+           -moz-box-orient: vertical;
+           -moz-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+           -moz-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 }
 
@@ -40,7 +69,8 @@
         }
 }
 @mixin boxmenus {
-    box-shadow: 1px 1px 5px 1px #E0E0E0;
+    -webkit-box-shadow: 1px 1px 5px 1px #E0E0E0;
+            box-shadow: 1px 1px 5px 1px #E0E0E0;
     max-width: 550px;
     height: 760px;
     padding: 15px 15px 15px 15px;
@@ -49,16 +79,35 @@
 }
 
 @mixin formstyle {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    -o-transition: transform 400ms;
+    -moz-transition: transform 400ms, -moz-transform 400ms;
     transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms, -moz-transform 400ms;
     &:hover {
-        transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+           -moz-transform: scale(1.15);
+            -ms-transform: scale(1.15);
+                transform: scale(1.15);
     }
 }
 @mixin formlinemenu1 {
     height:5px;
-    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+       -moz-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: -webkit-transform 1000ms;
+    transition: -webkit-transform 1000ms;
+    -o-transition: transform 1000ms;
+    -moz-transition: transform 1000ms, -moz-transform 1000ms;
     transition: transform 1000ms;
+    transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms;
     background-color: black;
     width: 160px;
     @media all and (max-width: 480px) {
@@ -67,20 +116,44 @@
 }
 @mixin formlinemenu2 {
     height:5px;
-    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+       -moz-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: -webkit-transform 1000ms;
+    transition: -webkit-transform 1000ms;
+    -o-transition: transform 1000ms;
+    -moz-transition: transform 1000ms, -moz-transform 1000ms;
     transition: transform 1000ms;
+    transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms;
     width: 120px;
 }
 @mixin formlinemenu3 {
     height:5px;
-    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+       -moz-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: -webkit-transform 1000ms;
+    transition: -webkit-transform 1000ms;
+    -o-transition: transform 1000ms;
+    -moz-transition: transform 1000ms, -moz-transform 1000ms;
     transition: transform 1000ms;
+    transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms;
     width: 150px; 
 }
 @mixin formlinemenu4 {
     height: 5px;
-    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+       -moz-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: -webkit-transform 1000ms;
+    transition: -webkit-transform 1000ms;
+    -o-transition: transform 1000ms;
+    -moz-transition: transform 1000ms, -moz-transform 1000ms;
     transition: transform 1000ms;
+    transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms;
     width: 140px;
     @media all and (max-width: 480px) {
         width: 100px;
