@@ -96,6 +96,14 @@
                 transform: scale(1.15);
     }
 }
+
+@mixin line {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
 @mixin formlinemenu1 {
     height:5px;
     -webkit-transform: scaleX(0);
