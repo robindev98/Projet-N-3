@@ -1,11 +1,6 @@
 @import"directorie/variable";
 @import"directorie/mixin"; 
 @import"directorie/police";
- 
- 
-body { 
-    height: 1000px;  
-}
 
 .logo {
     @include tag;
@@ -104,7 +99,7 @@ i {
                     -webkit-text-fill-color: transparent;                     
                     &__menu3 {
                         color: $color-menu3-darkblue;
-                        font-weight: bold; 
+                        font-weight: bold;  
                     }
                 }
             }
@@ -141,10 +136,6 @@ nav .bigger {
 
 footer {  
     text-align: center;
-    position: fixed; 
-    bottom: 0;
-    left: 0;
-    width: 100%;
 }
 
 .foot { /* onglet prochainement */
@@ -153,21 +144,11 @@ footer {
         -ms-flex-pack: center;
             -moz-box-pack: center;
          justify-content: center;
-    max-width: 250px;
+    max-width: 280px;
     max-height: 40px;
     margin: auto;
     font-size: 1.5em;
     border-radius: 10px;
-    &__point:after {
-        overflow: hidden;
-        display: inline-block;
-        vertical-align: bottom;
-        -webkit-animation: ellipsis steps(4,end) 900ms infinite; 
-        -moz-animation: ellipsis steps(4,end) 900ms infinite; 
-             animation: ellipsis steps(4,end) 900ms infinite;    
-        content: "\2026";
-        width: 0.1em;
-    }
         &__mention { /*onglet mentions légales + Contactez-nous*/
             max-height: 50px;
             font-size: 1.3em;
@@ -184,26 +165,84 @@ footer {
                 }
             }
         }
-    }
+}
 
-@-moz-keyframes ellipsis {
-  to {
-    width: 1.25em;    
+@-webkit-keyframes opacity {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
   }
 }
 
-@keyframes ellipsis {
-  to {
-    width: 1.25em;    
+@-moz-keyframes opacity {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
   }
 }
 
-@-webkit-keyframes ellipsis {
-  to {
-    width: 1.25em;    
+@-webkit-keyframes opacity {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
   }
-} 
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+}
 
+@-moz-keyframes opacity {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+}
+#searching-loading span {
+  -webkit-animation-name: opacity;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: opacity;
+  -moz-animation-duration: 1s;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-name: opacity;
+  -ms-animation-duration: 1s;
+  -ms-animation-iteration-count: infinite;
+}
+#searching-loading span:nth-child(2) {
+  -webkit-animation-delay: 100ms;
+  -moz-animation-delay: 100ms;
+  animation-delay: 100ms;
+}
+#searching-loading span:nth-child(3) {
+  -webkit-animation-delay: 300ms;
+  -moz-animation-delay: 300ms;
+  animation-delay: 300ms;
+}
 
 @-webkit-keyframes shake {
   0% { -webkit-transform: translate(1px, 1px) rotate(0deg); transform: translate(1px, 1px) rotate(0deg); }
@@ -218,7 +257,6 @@ footer {
   90% { -webkit-transform: translate(1px, 2px) rotate(0deg); transform: translate(1px, 2px) rotate(0deg); }
   100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); transform: translate(1px, -2px) rotate(-1deg); }
 }
-
 
 @-moz-keyframes shake {
   0% { -webkit-transform: translate(1px, 1px) rotate(0deg); -moz-transform: translate(1px, 1px) rotate(0deg); transform: translate(1px, 1px) rotate(0deg); }
@@ -376,151 +414,43 @@ footer {
             -ms-flex-align:center;
                 -moz-box-align:center;
              align-items:center; 
-        height: 50px;
-        &:hover { /*Animation border MENU */
-            .line1 { 
-                @include line;
-            }   
-            .line2 {
-                @include line;
-            }  
-        }    
+        height: 50px;  
     }
     .line1menu1 { 
         @include formlinemenu1; 
-        -webkit-transform-origin: right; 
-            -ms-transform-origin: right; 
-                -moz-transform-origin: right; 
-             transform-origin: right; 
-    } 
-    .line2menu1 {  
-        @include formlinemenu1;
-        -webkit-transform-origin: left;
-            -ms-transform-origin: left;
-                -moz-transform-origin: left;
-             transform-origin: left;
     }
-
-
     .line1menu2 {
         @include formlinemenu2;
         background-color: $color-menu2-orange;
-        -webkit-transform-origin: right;
-            -ms-transform-origin: right;
-                -moz-transform-origin: right;
-             transform-origin: right;
         &_1 {
             @include formlinemenu2;
             background-color: $color-menu2-violet;
-            -webkit-transform-origin: right;
-                -ms-transform-origin: right;
-                    -moz-transform-origin: right;
-                 transform-origin: right;
         }
         &__1 {
             @include formlinemenu2;
             background-color: $color-menu2-blue;
-            -webkit-transform-origin: right;
-                -ms-transform-origin: right;
-                    -moz-transform-origin: right;
-                 transform-origin: right;
         } 
     } 
-    .line2menu2 {
-        @include formlinemenu2;
-        background-color: $color-menu2-orange;
-        -webkit-transform-origin: left;
-            -ms-transform-origin: left;
-                -moz-transform-origin: left;
-             transform-origin: left;
-        &_2 {
-            @include formlinemenu2;
-            background-color: $color-menu2-violet;
-            -webkit-transform-origin: left;
-                -ms-transform-origin: left;
-                    -moz-transform-origin: left;
-                 transform-origin: left;
-        }
-        &__2 {
-            @include formlinemenu2;
-            background-color: $color-menu2-blue;
-            -webkit-transform-origin: left;
-                -ms-transform-origin: left;
-                    -moz-transform-origin: left;
-                 transform-origin: left; 
-        }
-    } 
-
     .line1menu3 {
         @include formlinemenu3; 
         background-color: $color-menu3-darkblue;
-        -webkit-transform-origin: right;
-            -ms-transform-origin: right;
-                -moz-transform-origin: right;
-             transform-origin: right;
         &_1 {
             @include formlinemenu3;
             background-color: $color-menu3-blue;
-            -webkit-transform-origin: right;
-                -ms-transform-origin: right;
-                    -moz-transform-origin: right;
-                 transform-origin: right;
         }
         &__1 {
             @include formlinemenu3;
             background-color: $color-menu3-lightblue;
-            -webkit-transform-origin: right;
-                -ms-transform-origin: right;
-                    -moz-transform-origin: right;
-                 transform-origin: right;
         }
     }
-    .line2menu3 {
-        @include formlinemenu3; 
-        background-color: $color-menu3-darkblue;
-        -webkit-transform-origin: left;
-            -ms-transform-origin: left;
-                -moz-transform-origin: left;
-             transform-origin: left;
-        &_2 {
-            @include formlinemenu3;
-            background-color: $color-menu3-blue;
-            -webkit-transform-origin: left;
-                -ms-transform-origin: left;
-                    -moz-transform-origin: left;
-                 transform-origin: left;
-        }
-        &__2 {
-            @include formlinemenu3;
-            background-color: $color-menu3-lightblue;
-            -webkit-transform-origin: left;
-                -ms-transform-origin: left;
-                    -moz-transform-origin: left;
-                 transform-origin: left;
-        }
-    }
-
     .line1menu4 {
         @include formlinemenu4;
         background: -webkit-linear-gradient(0deg, $color-menu4-darkgreen, $color-menu4-lightgreen);
             -webkit-background-clip: border;
             -webkit-text-fill-color: transparent;
-        -webkit-transform-origin: right;
-            -ms-transform-origin: right;
-                -moz-transform-origin: right;
-             transform-origin: right;
     }
-    .line2menu4 {
-        @include formlinemenu4;
-        background: -webkit-linear-gradient(180deg, $color-menu4-darkgreen, $color-menu4-lightgreen);
-            -webkit-background-clip: border;
-            -webkit-text-fill-color: transparent;
-        -webkit-transform-origin: left;
-            -ms-transform-origin: left;
-                -moz-transform-origin: left;
-             transform-origin: left;
-    }
-    .main { 
+
+    .main { /*disposition du texte*/
         text-align: left;
         &__euro {
             float: right;
@@ -528,3 +458,18 @@ footer {
         } 
     }
 } 
+.a { /* animation soulignement*/
+    color: inherit;
+    text-decoration: none;
+    background: -moz-linear-gradient(bottom, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 11%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background: -o-linear-gradient(bottom, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 11%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 0, 0, 0.5)), color-stop(11%, rgba(255, 0, 0, 0.5)), color-stop(10.01%, transparent)) no-repeat left bottom / 0 100%;
+    background: linear-gradient(to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 11%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    -webkit-transition: background-size .5s;
+    -o-transition: background-size .5s;
+    -moz-transition: background-size .5s;
+    transition: background-size .5s;
+}
+.a:hover {
+    background-size: 100% 100%;
+}
