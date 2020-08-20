@@ -35,6 +35,9 @@
   margin-top: 0px;
   font-size: 3em; }
 
+body {
+  height: 1000px; }
+
 a {
   text-decoration: none; }
 
@@ -247,7 +250,11 @@ nav .bigger {
     transform: scale(1.15); }
 
 footer {
-  text-align: center; }
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
 
 .foot {
   /* onglet prochainement */

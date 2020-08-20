@@ -13,6 +13,10 @@
     font-size: 3em;   
 } 
 
+body {
+  height: 1000px;
+}
+
 a {
     text-decoration: none;
 }
@@ -136,6 +140,10 @@ nav .bigger {
 
 footer {  
     text-align: center;
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .foot { /* onglet prochainement */
