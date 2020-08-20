@@ -54,6 +54,11 @@
     }
 }
 
+@mixin queiresprochainement {@media all and (max-width: 700px) {
+    margin-bottom: 100px;
+    }
+}
+
 @mixin queriesmenu {
     @media all and (max-width: 700px) {
         margin-top: 20px;
